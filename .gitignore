@@ -1,0 +1,22 @@
+# Gradle
+.gradle/
+build/
+**/build/
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+.DS_Store
+
+# Gradle wrapper JAR (binary — each dev generates it locally)
+gradle/wrapper/gradle-wrapper.jar
+
+# Kotlin build caches
+**/.kotlin/
+
+# Generated files
+**/gen/
+**/generated/

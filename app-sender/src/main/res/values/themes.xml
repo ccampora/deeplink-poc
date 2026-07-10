@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base theme for the Compose activity window — no action bar needed. -->
+    <style name="Theme.App" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>

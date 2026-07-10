@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.App"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+
+            <!-- Launcher intent -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Handle senderpoc://generate deep links from ReceiverApp -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="senderpoc"
+                    android:host="generate" />
+            </intent-filter>
+
+        </activity>
+
+        <!--
+            FileProvider — shares generated files with ReceiverApp via a
+            content:// URI without granting broad storage access.
+
+            authority   : com.poc.sender.fileprovider
+            exported    : false  (only accessible via ContentResolver)
+            grantUriPermissions: true  (required for FLAG_GRANT_READ_URI_PERMISSION)
+        -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.poc.sender.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

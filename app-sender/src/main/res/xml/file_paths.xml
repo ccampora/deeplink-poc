@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    FileProvider path configuration for com.poc.sender.
+
+    These entries define which directories FileProvider is allowed to share.
+    The generated payload files are written to cacheDir, so <cache-path>
+    with path="." (root of cache dir) is the only strictly required entry.
+    <files-path> is included for completeness if the storage path is changed.
+-->
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Maps to Context.getCacheDir() -->
+    <cache-path name="cache" path="." />
+    <!-- Maps to Context.getFilesDir() -->
+    <files-path name="files" path="." />
+</paths>
