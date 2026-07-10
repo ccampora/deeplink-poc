@@ -2,7 +2,7 @@
 
 ## Demo
 
-<video src="https://github.com/ccampora/deeplink-poc/raw/master/Recording%202026-07-10%20161612.mp4" controls width="100%"></video>
+<video src="https://github.com/ccampora/deeplink-poc/releases/download/v1.0/Recording%202026-07-10%20161612.mp4" controls width="100%"></video>
 
 ## What this PoC proves
 
