@@ -1,5 +1,11 @@
 # DeepLink PoC — Android Inter-App File Sharing via FileProvider
 
+## Demo
+
+<video src="Recording%202026-07-10%20161612.mp4" controls width="360"></video>
+
+> If the video does not play inline, [click here to watch the demo](Recording%202026-07-10%20161612.mp4).
+
 ## What this PoC proves
 
 Two completely independent Android apps on the same device can exchange a
