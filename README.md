@@ -1,9 +1,5 @@
 # DeepLink PoC — Android Inter-App File Sharing via FileProvider
 
-## Demo
-
-<video src="https://github.com/ccampora/deeplink-poc/releases/download/v1.0/Recording%202026-07-10%20161612.mp4" controls width="100%"></video>
-
 ## What this PoC proves
 
 Two completely independent Android apps on the same device can exchange a
